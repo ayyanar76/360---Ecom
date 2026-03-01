@@ -9,7 +9,7 @@ import StripeRoute from "./routes/stripeRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+const allowedOrigin = https://three60-shops.onrender.com/ || "http://localhost:5173";
 app.use(cors({
   origin: allowedOrigin,
   credentials:true
