@@ -10,7 +10,7 @@ const createCheckout = async (req, res) => {
     }
     const stripe = new Stripe(stripeSecret)
     const cart   = req.body.cart || []
-    const clientUrl = (process.env.CLIENT_URL || 'http://localhost:5173').replace(/\/$/, '')
+    const clientUrl = ("https://three60-shops-vijh.onrender.com"  || 'http://localhost:5173').replace(/\/$/, '')
     if (!Array.isArray(cart) || cart.length === 0) {
       return res.status(400).json({ error: "Cart is empty" })
     }
